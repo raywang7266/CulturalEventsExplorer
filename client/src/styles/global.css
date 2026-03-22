@@ -1,0 +1,175 @@
+/* global.css */
+/*
+Student Name : QIAN Ziyue
+Student ID   : 1155233243
+Student Name : ZHU Chunxuan
+Student ID   : 1155233366
+Student Name : XIONG Meini
+Student ID   : 1155233445
+Student Name : WANG Ziji
+Student ID   : 1155233196
+Student Name : WANG Yiran
+Student ID   : 1155233101
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f7fa;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2c3e50;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+  font-size: 1.6rem;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #3498db;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+body.dark-theme .card {
+  background: #2d2d2d;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.page-title {
+  margin-bottom: 24px;
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+body.dark-theme .page-title {
+  color: #82b1ff;
+}
+
+
+tr.dark-theme {
+  background-color: #3a3a3a;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #f1c40f;
+  cursor: pointer;
+}
+
+/* Loading & utils */
+.loading {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .navigation a {
+    margin: 0 8px;
+    font-size: 0.95rem;
+  }
+}
