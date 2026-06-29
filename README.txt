@@ -1,4 +1,4 @@
-how to start:
+How to start:
 1.net start MongoDB (ps. For MongoDB Compass, open it and create a new connect)
 2.open cmd
 3.cd path*/server(*:the real path in your computer)
